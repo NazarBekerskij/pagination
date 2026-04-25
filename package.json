@@ -5,7 +5,7 @@
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "dev": "npx parcel src/index.html",
-    "build": "parcel build src/index.html --public-url /pagination/",
+    "build": "parcel build src/index.html --public-url ./",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
@@ -19,10 +19,11 @@
   "bugs": {
     "url": "https://github.com/NazarBekerskij/pagination/issues"
   },
-  "homepage": "https://github.com/NazarBekerskij/pagination",
+  "homepage": "https://NazarBekerskij.github.io/pagination/",
   "devDependencies": {
     "gh-pages": "^6.3.0"
   },
   "dependencies": {
     "parcel": "^2.16.4"
-  }}
+  }
+}
