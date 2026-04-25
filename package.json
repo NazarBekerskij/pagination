@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/NazarBekerskij/pagination/issues"
   },
-  "homepage": "https://github.com/NazarBekerskij/pagination#readme",
+  "homepage": "https://github.com/NazarBekerskij/pagination",
   "devDependencies": {
     "gh-pages": "^6.3.0"
   },
