@@ -4,11 +4,11 @@
   "description": "",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "dev": "npx parcel src/index.html",
-    "build": "parcel build src/index.html --public-url ./",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
-  },
+  "dev": "parcel src/index.html",
+  "build": "parcel build src/index.html --public-url ./",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/NazarBekerskij/pagination.git"
