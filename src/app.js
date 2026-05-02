@@ -7,7 +7,7 @@ let totalPage = 0;
 const API_KEY = "55396511-9fa47eb753a2484966d5aafba";
 
 function getNews() {
-  return fetch(`https://pixabay.com/api/?key=${API_KEY}&editors_choice=true&per_page=${pageSize}&page=${page}`)
+  return fetch(`https://pixabay.com/api/?key=${API_KEY}&per_page=${pageSize}&page=${page}`)
     .then((res) => res.json());
 }
 
