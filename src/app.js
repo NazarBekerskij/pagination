@@ -5,7 +5,7 @@ let page = 1;
 let totalPage = 0;
 
 const API_KEY = "55396511-9fa47eb753a2484966d5aafba";
-
+                
 function getNews() {
   return fetch(`https://pixabay.com/api/?key=${API_KEY}&per_page=${pageSize}&page=${page}`)
     .then((res) => res.json());
@@ -19,17 +19,13 @@ getNews().then((res) => {
 function createArticles(array) {
   if (!array) return;
 
-  const item = array.map(({ tags, webformatURL, user }) => {
-    const imageUrl = webformatURL
-      ? webformatURL
-      : "https://hostiq.ua/wiki/wp-content/uploads/2021/05/03-error-404-not-found.png";
-
+const item = array.map(({ tags, webformatURL, user }) => {
     return `<li class="item">
         <h2>${tags}</h2>
         <h2>${user || "Unknown"}</h2>
-        <img src="${imageUrl}" alt="${tags}">
+        <img src="${webformatURL}" alt="${tags}">
     </li>`;
-  }).join("");
+}).join("");;
 
   listRef.insertAdjacentHTML("beforeend", item);
 }
